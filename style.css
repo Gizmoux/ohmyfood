@@ -148,12 +148,16 @@ span {
   background-color: transparent;
 }
 
+.section__restaurant--image {
+  width: 100%;
+  height: 200px;
+}
+
 /******************* HEADER *******************/
 .header__logo {
   display: flex;
   justify-content: center;
 }
-
 .header__logo--img {
   width: 40%;
   height: auto;
@@ -167,7 +171,6 @@ span {
   align-items: center;
   align-content: center;
 }
-
 .header__location--icon {
   margin-right: 10px;
 }
@@ -182,6 +185,7 @@ span {
   padding-bottom: 50px;
 }
 
+/******************* HEADER RESTAURANT PAGE *******************/
 /******************* FOOTER *******************/
 .footer {
   background: #353535;
