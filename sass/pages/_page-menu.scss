@@ -3,9 +3,9 @@
 	width: 100%;
 	height: 250px;
 
-	@include desktop-responsive {
-		height: 400px;
-	}
+	// @tablet {
+	// 	height: 400px;
+	// }
 
 	& img {
 		width: 100%;
@@ -18,7 +18,7 @@
 	position: relative;
 	top: -20px;
 	margin-bottom: -20px;
-	background-color: darken($white, 6%);
+	//background-color: darken($white, 6%);
 	border-radius: 25px 25px 0px 0px;
 	padding: 2% 5% 5% 5%;
 	z-index: 0;
@@ -27,31 +27,6 @@
 		display: flex;
 		align-items: center;
 		margin: auto;
-
-		& h2 {
-			width: 87%;
-			@include cursive-heading;
-
-			@include desktop-responsive {
-				font-size: 40px;
-				width: 95%;
-			}
-
-			@include tablet-responsive {
-				font-size: 35px;
-				width: 95%;
-			}
-		}
-	}
-
-	&__course-container {
-		@include desktop-responsive;
-
-		@include tablet-responsive {
-			display: flex;
-			align-items: flex-start;
-			justify-content: space-between;
-		}
 	}
 
 	&__orderbtn {
@@ -64,22 +39,22 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	@include desktop-responsive;
-	@include tablet-responsive {
-		width: 32%;
-	}
+	//@include desktop-responsive;
+	// @include tablet-responsive {
+	// 	width: 32%;
+	// }
 
 	&__heading {
 		position: relative;
 		margin: 4% 0% 2% 0%;
 		padding: 10px 0px;
 		font-size: 18px;
-		font-weight: map-get($font-weight, light);
+		// font-weight: map-get($font-weight, light);
 		text-transform: uppercase;
 
-		@include desktop-responsive {
-			font-size: 22px;
-		}
+		// @include desktop-responsive {
+		// 	font-size: 22px;
+		// }
 
 		&::after {
 			display: block;
@@ -100,9 +75,9 @@
 	width: 100%;
 	margin: 10px 0px;
 	padding: 0;
-	background-color: $white;
+	background-color: white;
 	border-radius: 15px;
-	@include object-shadow;
+	//@include object-shadow;
 	overflow: hidden;
 	cursor: pointer;
 
@@ -136,7 +111,7 @@
 		& h4 {
 			margin: 0;
 			font-size: 16px;
-			font-weight: map-get($font-weight, medium);
+			//font-weight: map-get($font-weight, medium);
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -144,7 +119,7 @@
 
 		& p {
 			margin: 0;
-			font-weight: map-get($font-weight, light);
+			// font-weight: map-get($font-weight, light);
 			font-size: 15px;
 			white-space: nowrap;
 			overflow: hidden;
@@ -160,7 +135,7 @@
 
 		& p {
 			margin: 0;
-			font-weight: map-get($font-weight, medium);
+			// font-weight: map-get($font-weight, medium);
 		}
 	}
 
@@ -182,7 +157,7 @@
 			font-weight: 900;
 			font-size: 25px;
 			content: '\f058';
-			color: $white;
+			color: white;
 			transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 		}
 	}
