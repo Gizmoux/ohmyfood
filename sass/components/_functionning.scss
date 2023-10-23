@@ -1,0 +1,32 @@
+/******************* FUNCTIONNING SECTION *******************/
+.function-choices__button {
+	// background-color: green;
+
+	border-radius: 20px;
+	margin: 10px;
+	border: none;
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	&--numbers {
+		background-color: #9355dc;
+		color: white;
+		padding: 7px 11px 7px 11px;
+		border-radius: 25px;
+		margin-left: -60px;
+	}
+	&:hover {
+		background-color: lightblue;
+	}
+}
+.functionning__section {
+	background-color: red;
+	width: 100%;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

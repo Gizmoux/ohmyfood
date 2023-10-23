@@ -1,0 +1,31 @@
+/******************* HEADER *******************/
+.header__logo {
+	display: flex;
+	justify-content: center;
+}
+
+.header__logo--img {
+	width: 40%;
+	height: auto;
+	padding: 10px;
+}
+.header__location {
+	background-color: #eaeaea;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.header__location--icon {
+	margin-right: 10px;
+}
+.explore__section {
+	// background-color: #f6f6f6;
+	background-color: lightgreen;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 50px;
+}

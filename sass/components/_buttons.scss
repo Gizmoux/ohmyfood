@@ -1,0 +1,28 @@
+.explore__button {
+	@include linear-gradient(180deg, $color-secondary, $color-primary);
+	width: 60%;
+	height: 50px;
+	color: white;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	&:hover {
+		@include button-shadow;
+	}
+}
+
+.empty-heart {
+	position: absolute;
+}
+.full-heart {
+	transition-property: all;
+	transition-duration: 500ms;
+	opacity: 0;
+	&:hover {
+		color: transparent;
+		opacity: 1;
+		background-image: $linear-gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+	}
+}
