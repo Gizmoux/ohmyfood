@@ -1,0 +1,39 @@
+.loader {
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s ease-in-out;
+}
+.load {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+
+	margin: 0 15px;
+	// animation: loader infinite 0.3s alternate;
+}
+.load1 {
+	animation-delay: 0.05s;
+}
+.load2 {
+	animation-delay: 0.1s;
+}
+.load3 {
+	animation-delay: 0.2s;
+}
+.load4 {
+	animation-delay: 0.3s;
+}
+.load5 {
+	animation-delay: 0.4s;
+}
+.load6 {
+	animation-delay: 0.5s;
+}
+@keyframes loader {
+	100% {
+		transform: translateY(-40px);
+	}
+}
