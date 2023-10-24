@@ -1,6 +1,6 @@
 /******************* RESTAURANT SECTION *******************/
 .restaurant__section {
-	background-color: grey;
+	background-color: $gray-light;
 }
 .photo-restaurant {
 	width: 100%;
@@ -32,6 +32,9 @@
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	margin-bottom: 10px;
+	&:hover {
+		@include object-shadow($shadow);
+	}
 }
 .restaurant__section--content {
 	// background-color: cadetblue;
@@ -43,7 +46,7 @@
 	align-items: center;
 }
 .restaurant__section--txt {
-	background-color: blue;
+	// background-color: blue;
 	display: flex;
 	flex-direction: column;
 	padding-left: 10px;
