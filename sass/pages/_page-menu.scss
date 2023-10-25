@@ -12,6 +12,7 @@
 }
 
 .menu {
+	background-color: red;
 	position: relative;
 	top: -20px;
 	margin-bottom: -20px;
@@ -21,6 +22,7 @@
 	z-index: 0;
 
 	&__heading {
+		// background-color: greenyellow;
 		display: flex;
 		align-items: center;
 		margin: auto;
@@ -34,9 +36,17 @@
 
 .course-list {
 	background-color: lightcoral;
+	@for $i from 1 through 3 {
+		&:nth-child(#{$i}) {
+			animation-delay: 100ms * $i;
+		}
+	}
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	animation: appear 1s;
+	animation-fill-mode: both;
+	padding-bottom: 20px;
 	//@include desktop-responsive;
 	// @include tablet-responsive {
 	// 	width: 32%;
@@ -44,7 +54,6 @@
 
 	&__heading {
 		position: relative;
-		// margin: 4% 0% 2% 0%;
 		margin: 4px 0 2px 0;
 		padding: 10px 0px;
 		font-size: 18px;

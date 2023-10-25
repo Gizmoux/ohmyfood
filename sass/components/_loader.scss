@@ -1,18 +1,22 @@
 .loader {
-	width: 150px;
-	height: 150px;
+	background-color: #fff;
+	opacity: 0.9;
+	position: fixed;
+	inset: 0px;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: opacity 1s ease-in-out;
+	// transition: opacity 5s ease-in-out;
+	animation: disappear 2s;
+	animation-fill-mode: forwards;
+	i {
+		animation: spin 3s;
+	}
 }
 .load {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-
 	margin: 0 15px;
-	// animation: loader infinite 0.3s alternate;
+	animation: loader infinite 300ms alternate;
 }
 .load1 {
 	animation-delay: 0.05s;
@@ -35,5 +39,19 @@
 @keyframes loader {
 	100% {
 		transform: translateY(-40px);
+	}
+}
+@keyframes disappear {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		// transform: scale(1);
+		visibility: hidden;
+	}
+}
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
 	}
 }

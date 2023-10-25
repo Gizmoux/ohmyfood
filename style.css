@@ -1,3 +1,13 @@
+@keyframes appear {
+  0% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 /******************* GENERAL *******************/
 * {
   font-family: "Roboto", sans-serif;
@@ -218,6 +228,7 @@ span {
 }
 
 .menu {
+  background-color: red;
   position: relative;
   top: -20px;
   margin-bottom: -20px;
@@ -241,6 +252,18 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: appear 1s;
+  animation-fill-mode: both;
+  padding-bottom: 20px;
+}
+.course-list:nth-child(1) {
+  animation-delay: 100ms;
+}
+.course-list:nth-child(2) {
+  animation-delay: 200ms;
+}
+.course-list:nth-child(3) {
+  animation-delay: 300ms;
 }
 .course-list__heading {
   position: relative;
@@ -343,19 +366,24 @@ span {
 }
 
 .loader {
-  width: 150px;
-  height: 150px;
+  background-color: #fff;
+  opacity: 0.9;
+  position: fixed;
+  inset: 0px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-in-out;
+  animation: disappear 2s;
+  animation-fill-mode: forwards;
+}
+.loader i {
+  animation: spin 3s;
 }
 
 .load {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   margin: 0 15px;
+  animation: loader infinite 300ms alternate;
 }
 
 .load1 {
@@ -385,6 +413,19 @@ span {
 @keyframes loader {
   100% {
     transform: translateY(-40px);
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
