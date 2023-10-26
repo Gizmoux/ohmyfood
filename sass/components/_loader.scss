@@ -2,13 +2,14 @@
 	background-color: #fff;
 	opacity: 0.9;
 	position: fixed;
+	// inset: top right bottom left à 0px
 	inset: 0px;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	// transition: opacity 5s ease-in-out;
-	animation: disappear 2s;
+	animation: disappear 1s;
 	animation-fill-mode: forwards;
 	i {
 		animation: spin 3s;
@@ -44,6 +45,7 @@
 @keyframes disappear {
 	0% {
 		transform: scale(1);
+		// visibility: visible;
 	}
 	100% {
 		// transform: scale(1);
