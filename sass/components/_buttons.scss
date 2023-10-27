@@ -13,10 +13,13 @@
 
 .empty-heart {
 	position: absolute;
+	font-size: 24px;
 }
 
 .full-heart {
 	position: relative;
+	font-size: 24px;
+
 	color: transparent;
 	transition-property: all;
 	transition-duration: 500ms;

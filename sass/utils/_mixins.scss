@@ -6,7 +6,6 @@
 }
 
 @mixin button-shadow {
-	transition-duration: 200ms;
 	box-shadow: 0 5px 10px $shadow;
 }
 @mixin object-shadow($color: $shadow) {

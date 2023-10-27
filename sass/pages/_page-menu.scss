@@ -12,6 +12,7 @@
 .header__menu {
 	background-color: red;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	a {
 		padding-left: 10px;
@@ -27,9 +28,9 @@
 }
 
 .menu {
-	background-color: red;
+	// background-color: red;
 	position: relative;
-	top: -20px;
+	top: -30px;
 	margin-bottom: -20px;
 	background-color: #f6f6f6;
 	border-radius: 25px 25px 0px 0px;
@@ -50,16 +51,16 @@
 }
 
 .course-list {
-	background-color: lightcoral;
+	// background-color: lightcoral;
 	@for $i from 1 through 3 {
 		&:nth-child(#{$i}) {
-			animation-delay: 100ms * $i;
+			animation-delay: 400ms * $i;
 		}
 	}
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	animation: appear 1s;
+	animation: appear 2s;
 	animation-fill-mode: both;
 	padding-bottom: 20px;
 	//@include desktop-responsive;
