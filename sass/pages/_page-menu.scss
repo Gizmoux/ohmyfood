@@ -1,10 +1,25 @@
 .menu__heading h2 {
 	font-family: 'Shrikhand', cursive;
 }
-
+.menu__heading {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	i {
+		padding-right: 30px;
+	}
+}
+.header__menu {
+	background-color: red;
+	display: flex;
+	align-items: center;
+	a {
+		padding-left: 10px;
+	}
+}
 .section__restaurant--image {
 	width: 100%;
-	height: 250px;
+	height: 220px;
 	object-fit: cover;
 	// 	@tablet {
 	// 		height: 400px;

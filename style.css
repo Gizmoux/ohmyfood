@@ -30,6 +30,10 @@ span {
   font-size: 16px;
 }
 
+section h2 {
+  padding-left: 10px;
+}
+
 .explore__button {
   background-image: linear-gradient(180deg, #ff79da, #9356dc);
   width: 60%;
@@ -86,7 +90,7 @@ span {
 .functionning__section {
   background-color: red;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,13 +102,11 @@ span {
   background-color: #f6f6f6;
   padding-top: 20px;
 }
-.restaurant__sectionh1 {
-  padding-left: 30px;
-}
 
 .photo-restaurant {
+  background-color: red;
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -140,6 +142,7 @@ span {
 }
 
 .restaurant__section--content {
+  background-color: blue;
   height: auto;
   width: 90%;
   display: flex;
@@ -180,19 +183,28 @@ span {
 }
 
 .explore__section {
-  background-color: lightgreen;
+  background-color: #f6f6f6;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 50px;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 45px 40px 45px;
+}
+
+/***************** RESET CSS ****************/
+head,
+body,
+footer {
+  margin: 0;
+  padding: 0;
 }
 
 /******************* FOOTER *******************/
 .footer {
   color: white;
-  width: 100%;
   background-color: #353535;
   display: flex;
   flex-direction: column;
@@ -224,9 +236,27 @@ span {
   font-family: "Shrikhand", cursive;
 }
 
+.menu__heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu__heading i {
+  padding-right: 30px;
+}
+
+.header__menu {
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+.header__menu a {
+  padding-left: 10px;
+}
+
 .section__restaurant--image {
   width: 100%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
 }
 

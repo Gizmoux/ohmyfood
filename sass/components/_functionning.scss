@@ -1,7 +1,6 @@
 /******************* FUNCTIONNING SECTION *******************/
 .function-choices__button {
 	background-color: $gray-light;
-
 	border-radius: 20px;
 	margin: 10px;
 	border: none;
@@ -12,7 +11,6 @@
 
 	&--numbers {
 		background-color: #9355dc;
-
 		color: white;
 		padding: 7px 11px 7px 11px;
 		border-radius: 25px;
@@ -24,7 +22,7 @@
 .functionning__section {
 	background-color: red;
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
