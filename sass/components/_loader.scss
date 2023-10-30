@@ -8,11 +8,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// transition: opacity 5s ease-in-out;
-	animation: disappear 1s;
+	animation: disappear 3s;
 	animation-fill-mode: forwards;
 	i {
-		animation: spin 3s;
+		animation: spin 1.5s;
 	}
 }
 .load {
@@ -21,32 +20,34 @@
 }
 .load1 {
 	animation-delay: 0.05s;
+	color: $color-primary;
 }
 .load2 {
 	animation-delay: 0.1s;
+	color: $color-secondary;
 }
 .load3 {
 	animation-delay: 0.2s;
+	color: $color-tertiary;
 }
 .load4 {
 	animation-delay: 0.3s;
+	color: $color-tertiary-strong;
 }
 .load5 {
 	animation-delay: 0.4s;
+	color: $darkblue;
 }
 .load6 {
 	animation-delay: 0.5s;
+	color: $color-primary;
 }
 @keyframes loader {
 	100% {
-		transform: translateY(-40px);
+		transform: translateY(-30px);
 	}
 }
 @keyframes disappear {
-	0% {
-		transform: scale(1);
-		// visibility: visible;
-	}
 	100% {
 		// transform: scale(1);
 		visibility: hidden;

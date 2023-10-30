@@ -1,7 +1,16 @@
 /******************* RESTAURANT SECTION *******************/
 .restaurant__section {
 	background-color: $gray-light;
+	// background-color: red;
 	padding-top: 20px;
+}
+.grid__section {
+	@include tablet {
+		// background-color: red;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 .photo-restaurant {
 	// background-color: red;
@@ -9,18 +18,20 @@
 	height: 200px;
 	// position: relative;
 	object-fit: cover;
+	overflow: clip;
+	// overflow-clip-margin: content-box 5px;
 	// background-size: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	&--lanote {
-		object-position: 0px -150px;
-	}
-	&--alafrancaise {
-		object-position: 0px -36px;
-	}
-	&--ledelicedessens {
-		object-position: 0px -43px;
-	}
+	// &--lanote {
+	// 	object-position: 0px -150px;
+	// }
+	// &--alafrancaise {
+	// 	object-position: 0px -36px;
+	// }
+	// &--ledelicedessens {
+	// 	object-position: 0px -43px;
+	// }
 }
 .new-restaurant {
 	display: flex;
@@ -40,7 +51,8 @@
 	position: relative;
 }
 .restaurant__section--cards {
-	background-color: white;
+	// background-color: white;
+
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	padding-left: 10px;

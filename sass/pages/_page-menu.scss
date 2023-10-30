@@ -1,16 +1,11 @@
 .menu__heading h2 {
 	font-family: 'Shrikhand', cursive;
 }
-.menu__heading {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	i {
-		padding-right: 30px;
-	}
+.menu__heading i {
+	padding-left: 30px;
 }
 .header__menu {
-	background-color: red;
+	// background-color: red;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,7 +23,7 @@
 }
 
 .menu {
-	// background-color: red;
+	// background-color: lightblue;
 	position: relative;
 	top: -30px;
 	margin-bottom: -20px;
@@ -46,7 +41,14 @@
 
 	&__orderbtn {
 		display: flex;
+
 		justify-content: center;
+	}
+	@include tablet {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 160px;
 	}
 }
 

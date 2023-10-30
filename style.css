@@ -40,6 +40,10 @@ span {
   font-size: 16px;
 }
 
+.section__h2 {
+  margin-left: 10px;
+}
+
 .explore__button {
   background-image: linear-gradient(180deg, #ff79da, #9356dc);
   width: 60%;
@@ -103,13 +107,18 @@ span {
 }
 
 .functionning__section {
-  background-color: red;
   width: 100%;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .functionning__section {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /******************* RESTAURANT SECTION *******************/
@@ -118,21 +127,21 @@ span {
   padding-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .grid__section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .photo-restaurant {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  overflow: clip;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-}
-.photo-restaurant--lanote {
-  object-position: 0px -150px;
-}
-.photo-restaurant--alafrancaise {
-  object-position: 0px -36px;
-}
-.photo-restaurant--ledelicedessens {
-  object-position: 0px -43px;
 }
 
 .new-restaurant {
@@ -155,7 +164,6 @@ span {
 }
 
 .restaurant__section--cards {
-  background-color: white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   padding-left: 10px;
@@ -234,6 +242,20 @@ footer {
   flex-direction: column;
   align-content: center;
 }
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer .footer__link {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer .footer__link li {
+    display: flex;
+    margin-right: 30px;
+  }
+}
 .footer__title {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
@@ -260,17 +282,11 @@ footer {
   font-family: "Shrikhand", cursive;
 }
 
-.menu__heading {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
 .menu__heading i {
-  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .header__menu {
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,6 +318,14 @@ footer {
 .menu__orderbtn {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 160px;
+  }
 }
 
 .course-list {
@@ -431,11 +455,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 1s;
+  animation: disappear 3s;
   animation-fill-mode: forwards;
 }
 .loader i {
-  animation: spin 3s;
+  animation: spin 1.5s;
 }
 
 .load {
@@ -445,37 +469,40 @@ footer {
 
 .load1 {
   animation-delay: 0.05s;
+  color: #9356dc;
 }
 
 .load2 {
   animation-delay: 0.1s;
+  color: #ff79da;
 }
 
 .load3 {
   animation-delay: 0.2s;
+  color: #99e2d0;
 }
 
 .load4 {
   animation-delay: 0.3s;
+  color: #008766;
 }
 
 .load5 {
   animation-delay: 0.4s;
+  color: #053a68;
 }
 
 .load6 {
   animation-delay: 0.5s;
+  color: #9356dc;
 }
 
 @keyframes loader {
   100% {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
   }
 }
 @keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
   100% {
     visibility: hidden;
   }
