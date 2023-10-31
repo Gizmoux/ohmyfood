@@ -11,3 +11,7 @@
 @mixin object-shadow($color: $shadow) {
 	box-shadow: 0px 5px 8px $color;
 }
+@mixin content-desktop {
+	width: 80%;
+	margin: 0px 100px;
+}

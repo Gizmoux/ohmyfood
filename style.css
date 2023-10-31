@@ -31,6 +31,11 @@ a {
 h1 {
   font-size: 24px;
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 
 h2 {
   font-size: 22px;
@@ -56,6 +61,11 @@ span {
 .explore__button:hover {
   box-shadow: 0 5px 10px #cecece;
 }
+@media (min-width: 1024px) {
+  .explore__button {
+    width: 20%;
+  }
+}
 
 .empty-heart {
   position: absolute;
@@ -80,10 +90,10 @@ span {
 /******************* FUNCTIONNING SECTION *******************/
 .function-choices__button {
   background-color: #f6f6f6;
+  width: 90%;
   border-radius: 20px;
   margin: 10px;
   border: none;
-  width: 90%;
   display: flex;
   align-items: center;
 }
@@ -121,10 +131,25 @@ span {
   }
 }
 
+@media (min-width: 1024px) {
+  .section__functionning-content {
+    background-color: lightcoral;
+    width: 80%;
+    margin: 0px 100px;
+  }
+}
+
 /******************* RESTAURANT SECTION *******************/
 .restaurant__section {
   background-color: #f6f6f6;
   padding-top: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurant__section {
+    background-color: lightblue;
+    width: 80%;
+    margin: 0px 100px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -287,9 +312,17 @@ footer {
 }
 
 .header__menu {
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 25%;
+  }
 }
 .header__menu a {
   padding-left: 10px;

@@ -3,6 +3,10 @@
 	background-color: $gray-light;
 	// background-color: red;
 	padding-top: 20px;
+	@include desktop {
+		background-color: lightblue;
+		@include content-desktop;
+	}
 }
 .grid__section {
 	@include tablet {

@@ -9,6 +9,9 @@
 	&:hover {
 		@include button-shadow;
 	}
+	@include desktop {
+		width: 20%;
+	}
 }
 
 .empty-heart {
