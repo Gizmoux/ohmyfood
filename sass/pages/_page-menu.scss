@@ -2,10 +2,10 @@
 	font-family: 'Shrikhand', cursive;
 }
 .menu__heading i {
-	padding-left: 30px;
+	padding-left: 80px;
 }
 .header__menu {
-	background-color: red;
+	// background-color: red;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,9 +22,12 @@
 	width: 100%;
 	height: 220px;
 	object-fit: cover;
-	// 	@tablet {
-	// 		height: 400px;
-	// 	}
+	@include tablet {
+		height: 300px;
+	}
+	// @include desktop {
+	// 	height: 380px;
+	// }
 }
 
 .menu {
@@ -53,10 +56,16 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		margin: 0 160px;
+		margin: 0 100px;
 	}
 }
-
+.menu__course-container {
+	@include desktop {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 100px;
+	}
+}
 .course-list {
 	// background-color: lightcoral;
 	@for $i from 1 through 3 {
@@ -70,23 +79,14 @@
 	animation: appear 2s;
 	animation-fill-mode: both;
 	padding-bottom: 20px;
-	//@include desktop-responsive;
-	// @include tablet-responsive {
-	// 	width: 32%;
-	// }
 
 	&__heading {
 		position: relative;
 		margin: 4px 0 2px 0;
 		padding: 10px 0px;
 		font-size: 18px;
-
 		text-transform: uppercase;
 		font-weight: lighter;
-
-		// @include desktop-responsive {
-		// 	font-size: 22px;
-		// }
 
 		&::after {
 			display: block;

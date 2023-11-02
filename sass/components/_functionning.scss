@@ -4,19 +4,28 @@
 	// background-color: red;
 	width: 90%;
 	border-radius: 20px;
-	margin: 10px;
+	margin-bottom: 10px;
+	margin-left: -15px;
 	border: none;
 	display: flex;
 	// justify-content: space-evenly;
 	align-items: center;
+	@include tablet {
+		// background-color: aqua;
+		margin-left: 20px;
+		// width: 80%;
+	}
 
 	&--numbers {
 		background-color: #9355dc;
 		position: relative;
-		left: -18px;
+		left: -10px;
 		color: white;
 		padding: 7px 11px 7px 11px;
 		border-radius: 25px;
+		@include desktop {
+			margin-left: -5px;
+		}
 	}
 	i {
 		margin-right: 20px;
@@ -42,8 +51,21 @@
 	}
 }
 .section__functionning-content {
+	// @include desktop {
+	// 	// background-color: lightcoral;
+	// 	@include content-desktop;
+	// }
+	// width: 80%;
+	// margin: 0px 100px;
+}
+.section__h2--functionning {
 	@include desktop {
-		background-color: lightcoral;
-		@include content-desktop;
+		width: 80%;
+		margin: 15px 100px;
+	}
+}
+.restaurant__section .section__h2 {
+	@include desktop {
+		margin-left: 110px;
 	}
 }

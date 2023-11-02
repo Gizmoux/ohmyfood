@@ -3,10 +3,6 @@
 	background-color: $gray-light;
 	// background-color: red;
 	padding-top: 20px;
-	@include desktop {
-		background-color: lightblue;
-		@include content-desktop;
-	}
 }
 .grid__section {
 	@include tablet {
@@ -14,28 +10,24 @@
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
+		// @include desktop {
+		// 	// background-color: lightblue;
+		// 	@include content-desktop;
+		// }
 	}
 }
 .photo-restaurant {
 	// background-color: red;
-	width: 100%;
-	height: 200px;
-	// position: relative;
-	object-fit: cover;
-	overflow: clip;
-	// overflow-clip-margin: content-box 5px;
-	// background-size: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	// &--lanote {
-	// 	object-position: 0px -150px;
-	// }
-	// &--alafrancaise {
-	// 	object-position: 0px -36px;
-	// }
-	// &--ledelicedessens {
-	// 	object-position: 0px -43px;
-	// }
+	width: 100%;
+	height: 170px;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+	object-position: 100% 90%;
+	&--lanote {
+		object-position: 90% 60%;
+	}
 }
 .new-restaurant {
 	display: flex;

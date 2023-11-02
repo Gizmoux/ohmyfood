@@ -16,13 +16,15 @@ footer {
 	flex-direction: column;
 	align-content: center;
 	@include tablet {
+		height: 110px;
 		display: flex;
 		flex-direction: row-reverse;
-
+		align-items: flex-end;
 		.footer__link {
 			// background-color: blue;
 			display: flex;
 			justify-content: flex-end;
+
 			// margin-right: 50px;
 			li {
 				// background-color: green;
@@ -33,10 +35,18 @@ footer {
 	}
 	&__title {
 		// background-color: greenyellow;
+
 		font-family: 'Shrikhand', cursive;
 		font-weight: normal;
 		font-size: 18px;
 		margin: 15px 0px 0px 18px;
+		@include tablet {
+			font-size: 16px;
+			margin: 22px 30px;
+		}
+		@include desktop {
+			margin: 22px 90px;
+		}
 	}
 
 	li {
