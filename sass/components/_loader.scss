@@ -1,55 +1,35 @@
 .loader {
 	background-color: #fff;
-	opacity: 0.9;
+
 	position: fixed;
-	// inset: top right bottom left à 0px
-	inset: 0px;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
+	inset: 0;
+	z-index: 1;
+	opacity: 0.9;
 	animation: disappear 3s;
+	animation-delay: 3s;
 	animation-fill-mode: forwards;
 	i {
-		animation: spin 1.5s;
+		animation: spin 3s infinite;
 	}
 }
-.load {
-	margin: 0 15px;
-	animation: loader infinite 300ms alternate;
-}
-.load1 {
-	animation-delay: 0.05s;
+.loader-one {
+	position: absolute;
 	color: $color-primary;
 }
-.load2 {
-	animation-delay: 0.1s;
-	color: $color-secondary;
-}
-.load3 {
-	animation-delay: 0.2s;
+.loader-two {
+	position: relative;
 	color: $color-tertiary;
 }
-.load4 {
-	animation-delay: 0.3s;
-	color: $color-tertiary-strong;
-}
-.load5 {
-	animation-delay: 0.4s;
-	color: $darkblue;
-}
-.load6 {
-	animation-delay: 0.5s;
-	color: $color-primary;
-}
-@keyframes loader {
-	100% {
-		transform: translateY(-30px);
-	}
-}
 @keyframes disappear {
+	0% {
+		transform: scale(1);
+	}
 	100% {
-		// transform: scale(1);
+		// transform: scale(0);
 		visibility: hidden;
 	}
 }

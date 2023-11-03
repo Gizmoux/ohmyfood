@@ -80,12 +80,12 @@ span {
   position: relative;
   font-size: 24px;
   color: transparent;
-  transition-property: all;
-  transition-duration: 500ms;
+  transition: all 800ms;
   background-image: linear-gradient(180deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  transition-property: all ease-in-out;
 }
 .full-heart:hover {
   opacity: 1;
@@ -110,7 +110,7 @@ span {
 .function-choices__button--numbers {
   background-color: #9355dc;
   position: relative;
-  left: -10px;
+  left: -15px;
   color: white;
   padding: 7px 11px 7px 11px;
   border-radius: 25px;
@@ -518,61 +518,36 @@ footer {
 
 .loader {
   background-color: #fff;
-  opacity: 0.9;
   position: fixed;
-  inset: 0px;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
   animation: disappear 3s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 .loader i {
-  animation: spin 1.5s;
+  animation: spin 3s infinite;
 }
 
-.load {
-  margin: 0 15px;
-  animation: loader infinite 300ms alternate;
-}
-
-.load1 {
-  animation-delay: 0.05s;
+.loader-one {
+  position: absolute;
   color: #9356dc;
 }
 
-.load2 {
-  animation-delay: 0.1s;
-  color: #ff79da;
-}
-
-.load3 {
-  animation-delay: 0.2s;
+.loader-two {
+  position: relative;
   color: #99e2d0;
 }
 
-.load4 {
-  animation-delay: 0.3s;
-  color: #008766;
-}
-
-.load5 {
-  animation-delay: 0.4s;
-  color: #053a68;
-}
-
-.load6 {
-  animation-delay: 0.5s;
-  color: #9356dc;
-}
-
-@keyframes loader {
-  100% {
-    transform: translateY(-30px);
-  }
-}
 @keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
   100% {
     visibility: hidden;
   }
