@@ -2,22 +2,19 @@
 	font-family: 'Shrikhand', cursive;
 }
 .menu__heading i {
-	padding-left: 80px;
+	padding-left: 40px;
 }
-.header__menu {
-	// background-color: red;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	@include tablet {
-		display: flex;
-		justify-content: space-around;
-		padding-right: 25%;
-	}
-	a {
-		padding-left: 10px;
-	}
-}
+// .header__menu {
+// 	background-color: lightblue;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+
+// 	i {
+// 		background-color: red;
+// 		position: absolute;
+// 	}
+// }
 .section__restaurant--image {
 	width: 100%;
 	height: 220px;

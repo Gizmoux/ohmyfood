@@ -5,18 +5,19 @@
 
 	&--img {
 		// background-color: red;
-		width: 30%;
+		max-width: 160px;
 		height: auto;
 		padding: 10px 0;
 		@include tablet {
-			width: 20%;
-		}
-		@include desktop {
-			width: 15%;
+			max-width: 200px;
 		}
 	}
 }
-
+.header__menu i {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 15px;
+}
 .header__location {
 	background-color: #eaeaea;
 	display: flex;

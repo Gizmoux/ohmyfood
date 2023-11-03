@@ -240,19 +240,20 @@ span {
   justify-content: center;
 }
 .header__logo--img {
-  width: 30%;
+  max-width: 160px;
   height: auto;
   padding: 10px 0;
 }
 @media (min-width: 768px) {
   .header__logo--img {
-    width: 20%;
+    max-width: 200px;
   }
 }
-@media (min-width: 1024px) {
-  .header__logo--img {
-    width: 15%;
-  }
+
+.header__menu i {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 .header__location {
@@ -348,23 +349,7 @@ footer {
 }
 
 .menu__heading i {
-  padding-left: 80px;
-}
-
-.header__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .header__menu {
-    display: flex;
-    justify-content: space-around;
-    padding-right: 25%;
-  }
-}
-.header__menu a {
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 .section__restaurant--image {
