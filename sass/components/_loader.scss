@@ -18,16 +18,14 @@
 }
 .loader-one {
 	position: absolute;
-	color: $color-primary;
+	color: $color-tertiary;
 }
 .loader-two {
 	position: relative;
-	color: $color-tertiary;
+	color: $color-secondary;
 }
+
 @keyframes disappear {
-	0% {
-		transform: scale(1);
-	}
 	100% {
 		// transform: scale(0);
 		visibility: hidden;
