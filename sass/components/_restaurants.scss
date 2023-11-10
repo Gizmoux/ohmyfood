@@ -3,6 +3,8 @@
 	background-color: $gray-light;
 	// background-color: red;
 	padding-top: 20px;
+	padding-bottom: 1px;
+	// margin: 0px 0px 15px 0px;
 }
 .grid__section {
 	@include tablet {
@@ -33,7 +35,7 @@
 		}
 	}
 	&--lanote {
-		object-position: 90% 60%;
+		object-position: 90% 57%;
 	}
 }
 .new-restaurant {
@@ -54,13 +56,16 @@
 	position: relative;
 }
 .restaurant__section--cards {
-	// background-color: white;
-
+	background-color: white;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 15px;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	margin: 0px 10px 20px 10px;
+
+	// padding-left: 10px;
+	// padding-right: 10px;
+	// margin-bottom: 15px;
 	&:hover {
 		@include object-shadow($shadow);
 	}

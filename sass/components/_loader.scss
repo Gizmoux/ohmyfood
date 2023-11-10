@@ -25,6 +25,10 @@
 }
 
 @keyframes disappear {
+	0% {
+		// transform: rotate(360deg);
+		visibility: visible;
+	}
 	100% {
 		// transform: scale(0);
 		visibility: hidden;
@@ -33,5 +37,6 @@
 @keyframes spin {
 	100% {
 		transform: rotate(360deg);
+		visibility: hidden;
 	}
 }

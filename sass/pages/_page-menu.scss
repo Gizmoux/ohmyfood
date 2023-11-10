@@ -1,5 +1,6 @@
 .menu__heading h2 {
 	font-family: 'Shrikhand', cursive;
+	font-size: 26px;
 }
 .menu__heading i {
 	padding-left: 40px;
@@ -155,7 +156,12 @@
 		padding: 5px;
 
 		& p {
-			margin: 0;
+			@include mobile {
+				margin: 0px 0px -5px 20px;
+			}
+			@include desktop {
+				margin: 0px 0px -5px 40px;
+			}
 			// font-weight: map-get($font-weight, medium);
 		}
 	}
