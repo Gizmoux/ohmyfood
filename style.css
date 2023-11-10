@@ -108,7 +108,7 @@ span {
 .function-choices__button--numbers {
   background-color: #9355dc;
   position: relative;
-  left: -15px;
+  left: -10px;
   color: white;
   padding: 7px 11px 7px 11px;
   border-radius: 25px;
@@ -131,7 +131,7 @@ span {
 
 .functionning__section {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +178,16 @@ span {
   height: 170px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
-  object-position: 100% 90%;
+}
+@media (min-width: 320px) {
+  .photo-restaurant {
+    object-position: 100% 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .photo-restaurant--lapalette {
+    object-position: 100% 65%;
+  }
 }
 .photo-restaurant--lanote {
   object-position: 90% 60%;
@@ -437,7 +446,6 @@ footer {
 }
 
 .course-card {
-  background-color: lightyellow;
   position: relative;
   display: flex;
   justify-content: space-between;

@@ -24,7 +24,14 @@
 	height: 170px;
 	object-fit: cover;
 	border-radius: 15px 15px 0 0;
-	object-position: 100% 90%;
+	@include mobile {
+		object-position: 100% 80%;
+	}
+	&--lapalette {
+		@include desktop {
+			object-position: 100% 65%;
+		}
+	}
 	&--lanote {
 		object-position: 90% 60%;
 	}
