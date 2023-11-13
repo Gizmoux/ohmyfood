@@ -22,11 +22,14 @@
 	// background-color: lightblue;
 	position: relative;
 	top: -30px;
-	margin-bottom: -20px;
+	@include mobile {
+		margin-bottom: -30px;
+	}
+	// margin-bottom: -20px;
 	background-color: #f6f6f6;
 	border-radius: 25px 25px 0px 0px;
 	padding: 2% 5% 5% 5%;
-	z-index: 0;
+	// z-index: 0;
 
 	&__heading {
 		// background-color: greenyellow;
@@ -36,6 +39,7 @@
 	}
 
 	&__orderbtn {
+		// background-color: red;
 		display: flex;
 
 		justify-content: center;
@@ -44,7 +48,8 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		margin: 0 100px;
+		margin: 0px 100px -30px 100px;
+		// margin-bottom: -30px;
 	}
 }
 .menu__course-container {
@@ -128,7 +133,7 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		width: 100%;
+		width: 180%;
 		padding: 5px;
 
 		& h4 {
@@ -157,12 +162,11 @@
 
 		& p {
 			@include mobile {
-				margin: 0px 0px -5px 20px;
+				margin: 0px 0px -5px 10px;
 			}
 			@include desktop {
-				margin: 0px 0px -5px 40px;
+				margin: 0px 0px -5px 30px;
 			}
-			// font-weight: map-get($font-weight, medium);
 		}
 	}
 

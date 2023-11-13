@@ -381,11 +381,14 @@ footer {
 .menu {
   position: relative;
   top: -30px;
-  margin-bottom: -20px;
   background-color: #f6f6f6;
   border-radius: 25px 25px 0px 0px;
   padding: 2% 5% 5% 5%;
-  z-index: 0;
+}
+@media (min-width: 320px) {
+  .menu {
+    margin-bottom: -30px;
+  }
 }
 .menu__heading {
   display: flex;
@@ -401,7 +404,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 100px;
+    margin: 0px 100px -30px 100px;
   }
 }
 
@@ -482,7 +485,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
+  width: 180%;
   padding: 5px;
 }
 .course-card__description h4 {
@@ -507,12 +510,12 @@ footer {
 }
 @media (min-width: 320px) {
   .course-card__price p {
-    margin: 0px 0px -5px 20px;
+    margin: 0px 0px -5px 10px;
   }
 }
 @media (min-width: 1024px) {
   .course-card__price p {
-    margin: 0px 0px -5px 40px;
+    margin: 0px 0px -5px 30px;
   }
 }
 .course-card__checkout {
