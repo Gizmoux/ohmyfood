@@ -63,6 +63,9 @@
 		margin: 0px 100px -30px 100px;
 		// margin-bottom: -30px;
 	}
+	@include desktop {
+		margin: 0px 170px -30px 170px;
+	}
 }
 .menu__course-container {
 	@include desktop {
@@ -85,7 +88,7 @@
 	animation-fill-mode: both;
 	padding-bottom: 20px;
 	@include desktop {
-		margin: 0% 10% 0% 10%;
+		margin: 0% -5% 0% -5%;
 	}
 
 	&__heading {
@@ -116,7 +119,7 @@
 	width: 100%;
 	margin: 10px 0px;
 	padding: 0;
-	// background-color: white;
+	background-color: white;
 	border-radius: 15px;
 	@include object-shadow;
 	overflow: hidden;
