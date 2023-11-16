@@ -12,10 +12,8 @@
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
-		// @include desktop {
-		// 	// background-color: lightblue;
-		// 	@include content-desktop;
-		// }
+		row-gap: 30px;
+		column-gap: 50px;
 	}
 }
 .photo-restaurant {

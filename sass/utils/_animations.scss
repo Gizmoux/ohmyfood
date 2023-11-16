@@ -1,20 +1,38 @@
-@keyframes appear {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 0.2;
-	}
-	40% {
-		opacity: 0.4;
-	}
-	60% {
-		opacity: 0.6;
-	}
-	80% {
-		opacity: 0.8;
-	}
-	100% {
+// @keyframes appear {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	20% {
+// 		opacity: 0.2;
+// 	}
+// 	40% {
+// 		opacity: 0.4;
+// 	}
+// 	60% {
+// 		opacity: 0.6;
+// 	}
+// 	80% {
+// 		opacity: 0.8;
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
+.empty-heart {
+	position: absolute;
+	font-size: 24px;
+}
+
+.full-heart {
+	position: relative;
+	font-size: 24px;
+	color: transparent;
+	transition: all 1s;
+	background-image: $linear-gradient;
+	background-clip: text;
+	-webkit-background-clip: text;
+	opacity: 0;
+	&:hover {
 		opacity: 1;
 	}
 }

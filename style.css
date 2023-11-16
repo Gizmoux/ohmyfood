@@ -1,23 +1,22 @@
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+.empty-heart {
+  position: absolute;
+  font-size: 24px;
 }
+
+.full-heart {
+  position: relative;
+  font-size: 24px;
+  color: transparent;
+  transition: all 1s;
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.full-heart:hover {
+  opacity: 1;
+}
+
 /******************* GENERAL *******************/
 * {
   font-family: "Roboto", sans-serif;
@@ -69,25 +68,6 @@ span {
 }
 .explore__button:hover {
   box-shadow: 0 5px 10px #cecece;
-}
-
-.empty-heart {
-  position: absolute;
-  font-size: 24px;
-}
-
-.full-heart {
-  position: relative;
-  font-size: 24px;
-  color: transparent;
-  transition: all 1s;
-  background-image: linear-gradient(180deg, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-}
-.full-heart:hover {
-  opacity: 1;
 }
 
 /******************* FUNCTIONNING SECTION *******************/
@@ -169,6 +149,8 @@ span {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 50px;
   }
 }
 
@@ -364,7 +346,7 @@ footer {
 }
 
 .menu__heading i {
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .section__restaurant--image {
@@ -375,6 +357,21 @@ footer {
 @media (min-width: 768px) {
   .section__restaurant--image {
     height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .section__restaurant--image-ledelice {
+    object-position: 0% 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .section__restaurant--image-alafrancaise {
+    object-position: 0% 65%;
+  }
+}
+@media (min-width: 1024px) {
+  .section__restaurant--image-lanote {
+    object-position: 0% 55%;
   }
 }
 
@@ -432,6 +429,11 @@ footer {
 }
 .course-list:nth-child(3) {
   animation-delay: 1200ms;
+}
+@media (min-width: 1024px) {
+  .course-list {
+    margin: 0% 10% 0% 10%;
+  }
 }
 .course-list__heading {
   position: relative;
@@ -579,7 +581,6 @@ footer {
 @keyframes spin {
   100% {
     transform: rotate(360deg);
-    visibility: hidden;
   }
 }
 

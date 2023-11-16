@@ -3,7 +3,7 @@
 	font-size: 26px;
 }
 .menu__heading i {
-	padding-left: 40px;
+	padding-left: 50px;
 }
 
 .section__restaurant--image {
@@ -13,9 +13,21 @@
 	@include tablet {
 		height: 300px;
 	}
-	// @include desktop {
-	// 	height: 380px;
-	// }
+	&-ledelice {
+		@include desktop {
+			object-position: 0% 70%;
+		}
+	}
+	&-alafrancaise {
+		@include desktop {
+			object-position: 0% 65%;
+		}
+	}
+	&-lanote {
+		@include desktop {
+			object-position: 0% 55%;
+		}
+	}
 }
 
 .menu {
@@ -72,6 +84,9 @@
 	animation: appear 2s;
 	animation-fill-mode: both;
 	padding-bottom: 20px;
+	@include desktop {
+		margin: 0% 10% 0% 10%;
+	}
 
 	&__heading {
 		position: relative;
