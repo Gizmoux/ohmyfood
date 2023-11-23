@@ -7,12 +7,9 @@
 	border-radius: 25px;
 	cursor: pointer;
 	&:hover {
-		@include button-shadow;
+		box-shadow: 0 5px 10px $shadow;
+		filter: brightness(1.1);
 	}
-	// @include tablet {
-	// 	width: auto;
-
-	// }
 }
 
 // .empty-heart {

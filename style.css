@@ -88,6 +88,7 @@ span {
 }
 .explore__button:hover {
   box-shadow: 0 5px 10px #cecece;
+  filter: brightness(1.1);
 }
 
 /******************* FUNCTIONNING SECTION *******************/
@@ -494,9 +495,6 @@ footer {
 .course-card:hover > .course-card__checkout {
   margin-right: 0px;
 }
-.course-card:hover > .course-card__checkout::after {
-  transform: rotate(360deg);
-}
 .course-card__info {
   display: flex;
   flex: 1;
@@ -556,6 +554,18 @@ footer {
   border-radius: 0px 15px 15px 0px;
   background-color: #99e2d0;
   transition: margin-right 800ms cubic-bezier(0.6, 1.2, 0.9, 0.9);
+}
+@media (min-width: 768px) {
+  .course-card__checkout {
+    margin-right: -15%;
+    width: 15%;
+  }
+}
+@media (min-width: 1024px) {
+  .course-card__checkout {
+    margin-right: -10%;
+    width: 10%;
+  }
 }
 .course-card__checkout::after {
   display: inline-block;
